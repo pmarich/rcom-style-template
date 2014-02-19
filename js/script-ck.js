@@ -1,0 +1,4 @@
+/* Author:
+	Patrick Marich
+	pmarich@realnetworks.com
+*//* // Header Stuff // */$(document).ready(function(){$(".scroll").click(function(e){e.preventDefault();$("html,body").animate({scrollTop:$(this.hash).offset().top},"slow")});if(Modernizr.touch){$(".util").addClass("hidden");$(".rpc-mark").addClass("hidden")}else if(!Modernizr.svg){$("#logo").attr("src","img/rp-logo.png");$("#wsj").attr("src","img/rp-logo.png")}});$(document).ready(function(){var e=$(".vidWindow");$("#playVid").click(function(){$(e).fadeToggle("slow")});$("#playVid").click(function(){var e=$("#vid-load"),t='<iframe width="640" height="480" src="'+$(e).attr("data-video")+' class="meet-realplayer"></iframe>';$(e).replaceWith(t)});$(".icon-close").click(function(){$(e).fadeToggle("slow");$(".meet-realplayer").is(":visible")?$(this).hide():$(this).show()})});

@@ -1,0 +1,64 @@
+/* ==|== MAIN HEADER styles =====================================================
+   Author: pmarich@realnetworks.com
+   Use: To style basic header
+   ========================================================================== */
+
+/* // - - HEADER - - // */
+
+#header {
+	margin: 0 1%;
+	padding: 6px 0;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.85);
+	box-shadow: inset 0 1px 22px 8px rgba(255,255,255,1);
+	float: none;
+	
+	#logo {
+		max-width: 120px;
+		max-height: 50px;
+		margin: 20px auto 0;
+		.block;
+	}
+	.util {
+		.fl-right;
+	}
+	@media screen and (min-width: 660px) {
+		border-bottom: 1px solid #c3e9fc;
+		
+		#logo {
+			max-width: 140px;
+			margin: -3px 0 0;
+			.fl-left;
+		}
+	}
+	@media screen and (min-width: 1399px) {
+		max-width: 1400px;
+		margin: 6px auto;
+	}
+}
+.util {
+	margin: 0;
+	padding: 0;
+	display: none;
+	
+	li {
+		margin: 0;
+		padding: 0;
+		line-height: 1em;
+		text-align: center;
+		.fl-left;
+		
+		a {
+			margin: 0;
+			padding: 0 12px;
+			font-size: 1.3em;
+			line-height: 50px;
+			display: block;
+		}
+	}
+	@media screen and (min-width: 660px) {
+		.block;
+	}
+}
+
+/* // END HEADER // */

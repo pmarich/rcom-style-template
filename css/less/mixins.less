@@ -1,0 +1,287 @@
+/*********************
+CLEARFIXIN'
+*********************/
+
+// Contain floats: nicolasgallagher.com/micro-clearfix-hack/
+.clearfix {
+  zoom: 1;
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+}
+
+/*********************
+TOOLS
+*********************/
+
+// BORDER-BOX ALL THE THINGS! (http://paulirish.com/2012/box-sizing-border-box-ftw/)
+* { 
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing:    border-box; 
+	box-sizing:         border-box; 
+}
+
+// http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ 
+.image-replacement {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+
+@grey: #999;
+
+@real-blue: #00a1ff;
+@real-orange: #ffb320;
+@facebook-blue: #3d5b9a;
+
+
+@link-color:  @real-blue;
+@link-hover:  darken(@link-color, 9%);
+
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/
+
+
+/*********************
+TYPOGRAPHY
+*********************/
+
+@sans-serif: 'Din Pro', helvetica, arial, sans-serif;
+
+@text-color: #555;
+	
+	@font-face {
+    	font-family: 'Din Pro';
+    	src: url('../fonts/din-pro/din-pro.eot');
+    	src: url('../fonts/din-pro/din-pro.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/din-pro/din-pro.woff') format('woff'),
+             url('../fonts/din-pro/din-pro.ttf') format('truetype');
+    	font-weight: normal;
+    	font-style: normal;
+	}
+	@font-face {
+    	font-family: 'Din Pro Medium';
+    	src: url('../fonts/din-med/din-pro-medium.eot');
+    	src: url('../fonts/din-med/din-pro-medium.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/din-med/din-pro-medium.woff') format('woff'),
+             url('../fonts/din-med/din-pro-medium.ttf') format('truetype')
+             /*, url('../fonts/font-name.svg#font-name') format('svg'); */;
+    	font-weight: normal;
+    	font-style: normal;
+	}
+	@font-face {
+		font-family: 'RealCom Icons';
+		src:url('../fonts/real-icons/real-icons.eot');
+		src:url('../fonts/real-icons/real-icons.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/real-icons/real-icons.ttf') format('truetype'),
+			url('../fonts/real-icons/real-icons.woff') format('woff'),
+			url('../fonts/real-icons/real-icons.svg#RealCom Icons') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+@text-font: Helvetica, arial, sans-serif;	
+@header-font: 'Din Pro Medium',Helvetica, arial, sans-serif;
+
+[class*="icon-"] {
+	font-family: 'RealCom Icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	vertical-align: middle;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+	content: "\e600";
+}
+.icon-device:before {
+	content: "\e601";
+}
+.icon-share:before {
+	content: "\e602";
+}
+.icon-cloud:before {
+	content: "\e603";
+}
+.icon-tv:before {
+	content: "\e604";
+}
+.icon-gplus:before {
+	content: "\e605";
+}
+.icon-twitter:before {
+	content: "\e606";
+}
+.icon-fbook:before {
+	content: "\e607";
+}
+.icon-down:before {
+	content: "\e608";
+}
+.icon-up:before {
+	content: "\e609";
+}
+.icon-left:before {
+	content: "\e60a";
+}
+.icon-right:before {
+	content: "\e60b";
+}
+.icon-play:before {
+	content: "\e60c";
+}
+.icon-rpc:before {
+	content: "\e60d";
+}
+.icon-close:before {
+	content: "\e60e";
+}
+
+.button {
+	position: relative;
+	font-size: 1.6em;
+	
+	[class*="icon-"] {
+	    position: absolute;
+	    top: 33%;
+	    right: 8px;
+	    opacity: 0.4;	
+	    font-size: 1.2em;	
+	}
+			
+}
+/*  /// Layout ///  */
+
+.col {
+	width: 94%;
+	margin: 0 3%;
+	padding: 30px 2% 60px;
+	.clearfix;
+	.block;
+	
+	@media screen and (min-width: 1099px) {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}
+.content-area {
+	> div {
+		.col;
+	}
+}
+.content-margin-btm {
+	margin-bottom: 3em;
+}
+.one-col {
+	.col;
+	.content-margin-btm;	
+}
+.two-col {
+	.col;
+	.content-margin-btm;
+	padding: 0;
+	
+	@media screen and (min-width: 680px) {
+		> div {
+			width: 48.5%;
+			margin: 0;
+			.fl-left;
+		}
+		div:first-child {
+		    margin-right: 3%;
+		}
+	}
+}
+.three-col {
+	.col;
+	.content-margin-btm;
+	padding: 0;
+	
+	@media screen and (min-width: 710px) {
+		> div {
+			width: 31.8%;
+			margin: 0 0 0 2.3%;
+			.fl-left;
+		}
+		div:first-child {
+		    margin-left: 0;
+		}
+	}
+}
+.four-col {
+	.col;
+	.content-margin-btm;
+	padding: 0;
+	
+	@media screen and (min-width: 800px) {
+		> div {
+			width: 23.5%;
+			margin: 0 0 0 2%;
+			.fl-left;
+		}
+		div:first-child {
+		    margin-left: 0;
+		}
+	}
+}
+.two-third-col-left {
+	.three-col;
+	
+	div:first-child {
+		width: 65.1%;
+	}
+}
+.two-third-col-right {
+	.three-col;
+	
+	div:first-child + div {
+		width: 65.1%;
+	}
+}
+
+/* // Real Brand Layout Styles // */
+
+.border-bottom {
+	border-bottom: 1px #e1e1e1 solid;
+}
+.border-top {
+	border-top: 1px #e1e1e1 solid;
+}
+.border-left {
+	border-top: 1px #e1e1e1 solid;
+}
+.border-right {
+	border-top: 1px #e1e1e1 solid;
+}
+
+/*  /// Animated Stuff ///  */
+
+
+
+/* text alignment */
+.text-left   { text-align: left; }
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+
+.fl-left { float: left; }
+.fl-right { float: right; }
+.clear { clear: both; }
+.block { display: block; }
+.fixed { position: fixed; }
+.absolute { position: absolute; }
+.relative { position: relative; }

@@ -1,0 +1,61 @@
+/* ==|== Video Overlay styles =====================================================
+   Author: pmarich@realnetworks.com
+   Use: To style basic header
+   ========================================================================== */
+
+/* // - - Pop Up Styles - - // */
+
+.vidWindow {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 12000;
+	
+	iframe {
+		min-height: 220px;
+		margin: 80px auto 0;
+		border: 1px #555 solid;
+		position: relative;
+		.block;
+		z-index: 12002;
+	}
+	.icon-close {
+		width: 100%;
+		height: 100%;
+		padding: 8px;
+		font-size: 3.2em;
+		color: #fff;
+		text-align: right;
+		vertical-align: top;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: #000;
+		background-color: rgba(0,0,0,0.8);
+		z-index: 12001;
+	}		
+	
+	@media screen and (max-width: 639px) {
+		iframe {
+			width: 80%;
+			height: auto;
+			margin: 80px 10% 0;
+			
+			html, body, #player embed {
+				width: 80%;
+				height: auto;
+			}
+		}
+	}
+	@media screen and (max-width: 350px) {
+		iframe {
+			min-height: none;
+		}
+	}
+	.icon-close {
+		cursor: pointer;
+	}
+}

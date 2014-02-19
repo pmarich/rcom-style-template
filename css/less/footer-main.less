@@ -1,0 +1,209 @@
+/* ==|== MAIN FOOTER styles =====================================================
+   Author: pmarich@realnetworks.com
+   Use: To style basic footer
+   ========================================================================== */
+
+/* // - - FOOTER - - // */
+
+#footer {
+	padding: 0 6%;
+	background-color: #e1e1e1;
+	text-align: center;
+	overflow: hidden;
+	.clear;
+	
+	ul {
+		width: 100%;
+		padding: 0;
+	}
+	ul.social {
+	    width: 184px;
+		margin: 30px auto 52px;
+		padding: 0;
+		display: block;
+	
+		li {
+			margin: 0 0 0 24px;
+			.fl-left;
+			
+			a {
+				display: block;
+				color: #888;
+				
+				span {
+					font-size: 4.5em;
+				}
+			}
+		}
+		li:first-child {margin: 0;}
+	}
+	ul:not(.social) {
+		width: 100%;
+		margin: 0 0 40px;
+		padding: 0;
+		
+		li {
+			.fl-left;
+			margin: 10px 20px 0 0;
+			
+			a {
+				font-size: 1.3em;
+			}
+		}
+	}
+	ul.legal {
+		margin: 0;
+		clear: both;
+		border-bottom: 1px solid #ccc;
+		border-top: 1px solid #ccc;
+		
+		li {
+			width: 100%;
+			padding: 0 0 10px;
+			text-align: center;
+			
+			a {
+				color: #999;
+			}
+		}
+	}
+	@media screen and (max-width: 599px) {
+		ul:not(.social):before {
+			margin: 0;
+			padding: 0 0 4px;
+			border-bottom: #ccc solid 1px;
+			font-family: helvetica, sans-serif;
+			color: #aaa;
+			text-align: left;
+			display: block;
+		}
+		ul.products:before {
+				content: "products";
+			}
+			ul.community:before {
+			    content: "community";
+			}
+			ul.contact:before {
+			    content: "contact";
+			}
+			ul.help:before {
+			    content: "help";
+			}
+		ul.legal:before {
+			border-bottom: none;
+		}
+	}
+	@media screen and (min-width: 320px) {
+			ul.legal {
+				width: auto;
+				margin: 40px 0 0;
+				padding: 0 6%;
+				clear: both;
+				float: none;
+				text-align: center;
+				border: none;
+				display: inline-block;
+				border-top: none;
+				border-bottom: 1px solid #ccc;
+				
+				li {
+					width: 100%;
+					margin: 0;
+				}
+				li:first-child {
+					padding-left: 0;
+				}
+			}
+	}
+	@media screen and (min-width: 450px) {
+		ul.legal {
+			li {
+				width: auto;
+				margin: 0px 0px 4px 0px;
+				padding-left: 30px !important;
+			}
+		}
+	}
+	@media screen and (min-width: 600px) {
+		padding: 0 5%;
+		
+		ul:not(.social) {
+			width: 25%;
+			margin: 0 auto;
+			border-top: none;
+			border-left: 1px solid #ccc;
+			.fl-left;
+			
+			li {
+				width: 100%;
+				margin: 0;
+				padding: 8px 0;
+				display: inline-block;
+				float: none;
+				text-align: center;
+				
+				a {
+					font-size: 1.2em;
+				}
+			}
+			a {
+				margin: 0;
+				padding: 0;
+				line-height: 24px;
+				color: @real-blue;
+				float: none;
+			}
+		}
+		ul.products {
+		    border: none;
+		}
+		ul.legal {
+			width: 100% !important;
+			margin: 40px 0 0;
+			padding: 0 16%;
+			border-left: none;
+			
+			li {
+				width: auto;
+			}
+			a {
+				font-size: 1.2em;
+			}
+		}
+	}
+	@media screen and (min-width: 1300px) {
+		ul:not(.social) li a {
+			font-size: 1.3em;
+		}
+	}
+	#copyright {
+		width: 100%;
+		margin: 12px 0 18px;
+		padding: 0 20px;
+		float: left;
+		clear: both;
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 1em;
+		font-style: italic;
+		line-height: 1.3em;
+		color: #999;
+		text-align: center;
+	}
+	@media screen and (min-width:860px) {
+		padding: 0 18%;
+	}
+}/* END #footer */
+
+.no-touch {
+	#footer {
+		a:hover { color: #3bb6fe; }
+		ul.social, ul.legal {
+			a:hover {
+				color: #aaa;
+			}
+			a:active {
+				color: #fff;
+			}
+		}
+	}
+}

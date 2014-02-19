@@ -1,0 +1,266 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Real.com Style Template</title>
+  <meta name="description" content="">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+ <!--  <meta name="viewport" content="width=device-width"> -->
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="apple-itunes-app" content="app-id=666575946, app-argument=http://real.com">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+  
+  <script src="js/libs/modernizr.custom.min.js"></script>
+  <script src="js/libs/head.min.js"></script>
+  <script src="js/matchmedia.js"></script>
+  <script src="js/picturefill.js"></script>
+  <link rel="apple-touch-icon" href="rpc-ios-icon.png">
+  <link href="css/styles.css" rel="stylesheet" />
+  
+</head>
+<body>
+ 
+<!-- Taken from Home Page Header - would usually include Navigation --> 
+<!--
+<header id="header" class="clearfix">
+  		<a href="index.html"><img src="img/rp-logo.svg" id="logo" alt="RealPlayer Cloud" /></a>
+  		<ul class="nav util">
+  			<li><a href="#">Sign In</a></li>
+  			<li><a href="#">Sign Up</a></li>
+  		</ul>
+</header>
+-->
+<!-- END Header #1 -->
+
+<!-- Example of Sub-Header - for pages without Navigation -->
+<header id="header" class="clearfix">
+  		<a href="index.html"><img src="img/rp-logo.svg" id="logo" alt="RealPlayer Cloud" /></a>
+  		<h1>The New RealPlayer</h1>
+  		<ul class="nav util">
+  			<li><a href="#">Sign In</a></li>
+  			<li><a href="#">Sign Up</a></li>
+  		</ul>
+</header>
+<!-- END Header #2 -->
+
+<section role="main" class="clearfix">
+
+	<div id="style-area1" class="content-area">
+		<div>
+			<h1>I Am the H1 in a One Column Layout</h1>
+			<p>Notice how everything is center aligned? This pattern is most effective at the top of a longer page: like the &lsquo;Devices Page&rsquo;.</p>
+	    	<div class="btn-wrap"><a href="#" class="button cta">Get Basic CTA Now</a></div>
+		</div>
+	</div><!-- END #style-area1 -->
+	
+	<div id="style-area2" class="content-area">
+		<div>
+			<h1>I Am the H1 in a One Column Layout Aligned to the Left</h1>
+			<p>Notice how everything is left aligned? This works great for simple utility pages like &lsquo;Thank You&rsquo; and &lsquo;Unsubscribe&rsquo;.</p>
+	    	<div class="btn-wrap"><a href="#" class="button cta">Get Basic CTA Now</a></div>
+		</div>
+	</div><!-- END #style-area2 -->
+	
+  	<div id="style-area3" class="content-area">
+  		<div>
+  	    	<h2>I'm the First Column in a Two Column Layout</h2>
+  	    	<p>These are icons in our font:</p>
+  	    	<ul class="icon-examples">
+  	    		<li><span class="icon-rpc"></span> RPC Icon</li>
+  	    		<li><span class="icon-play"></span> Play Button Icon</li>
+  	    		<li><span class="icon-menu"></span> Menu Icon</li>
+  	    		<li><span class="icon-gplus"></span> Google Plus Icon</li>
+  	    		<li><span class="icon-twitter"></span> Twitter Icon</li>
+  	    		<li><span class="icon-fbook"></span> Facebook Icon</li>
+  	    		<li><span class="icon-up"></span> Arrow Up Icon</li>
+  	    		<li><span class="icon-down"></span> Arrow Down Icon</li>
+  	    		<li><span class="icon-left"></span> Arrow Left Icon</li>
+  	    		<li><span class="icon-right"></span> Arrow Right Icon</li>
+  	    		<li><span class="icon-close"></span> Close Icon</li>
+  	    		<!--
+  	    		// Additional Icons in the Icon Font
+  	    		
+	  			<li>Icon Name <span class="icon-device"></span></li>
+  	    		<li>Icon Name <span class="icon-share"></span></li>
+  	    		<li>Icon Name <span class="icon-cloud"></span></li>
+  	    		<li>Icon Name <span class="icon-tv"></span></li>
+  				-->
+  	    	</ul>
+  		</div><!-- END Column #1 -->
+  		
+  		<div>
+  	    	<h2>I'm the Second Column in a Two Column Layout &amp; These Are Buttons</h2>
+  	    	<p>Click buttons to see pattern post on design.real.com. Button usage works as follows:</p>
+  	    	<div class="btn-wrap"><a href="#" class="button cta">Standard CTA Button</a></div>
+  	    	<a href="#" class="button cta">Download RealPlayer Cloud<span class="icon-down"></span></a>
+  	    	<div class="btn-wrap"><a href="#" class="button">General Button</a></div>
+  	    	<div class="btn-wrap"><a href="#" class="button facebook-btn"><span aria-hidden="true"><img src="img/facebook-logo.svg" alt="Facebook Logo" /></span>Facebook Button</a></div>
+  	    	<a href="#" class="more">Inline Link</a>
+  		</div><!-- END Column #2 -->
+  	</div><!-- END #style-area3 -->
+  	
+  	<div id="style-area4" class="content-area">
+  		<div>
+  	    	<h2>I'm the First Column in a Three Column Layout</h2>
+  	    	<p>Move your videos easily between your computer and your smartphone or tablet. They are always correctly formatted for the device. You can even download videos to the device for offline use.</p>
+  		</div><!-- END Column #1 -->
+  		
+  		<div>
+  	    	<h2>I'm the Second Column in a Three Column Layout</h2>
+  	    	<p>Move your videos easily between your computer and your smartphone or tablet. They are always correctly formatted for the device. You can even download videos to the device for offline use.</p>
+  		</div><!-- END Column #2 -->
+  		
+  		<div>
+  	    	<h2>I'm the Third Column in a Three Column Layout</h2>
+  	    	<p>Move your videos easily between your computer and your smartphone or tablet. They are always correctly formatted for the device. You can even download videos to the device for offline use.</p>
+  		</div><!-- END Column #3 -->
+  	</div><!-- END #style-area4 -->
+  	
+  	
+  	
+  	<div id="style-area5" class="content-area">
+  		<div>
+  	    	<h2>I'm the First Column in a Four Column Layout</h2>
+  	    	<p>Move your videos easily between your computer and your smartphone or tablet. They are always correctly formatted for the device. You can even download videos to the device for offline use.</p>
+  		</div><!-- END Column #1 -->
+  		<div>
+  	    	<h2>I'm the Second Column in a Four Column Layout</h2>
+  	    	<p>Move your videos easily between your computer and your smartphone or tablet. They are always correctly formatted for the device. You can even download videos to the device for offline use.</p>
+  		</div><!-- END Column #2 -->
+  		<div>
+  	    	<h2>I'm the Third Column in a Four Column Layout</h2>
+  	    	<p>Move your videos easily between your computer and your smartphone or tablet. They are always correctly formatted for the device. You can even download videos to the device for offline use.</p>
+  		</div><!-- END Column #3 -->
+  		<div>
+  	    	<h2>I'm the Last Column in a Four Column Layout</h2>
+  	    	<p>Move your videos easily between your computer and your smartphone or tablet. They are always correctly formatted for the device. You can even download videos to the device for offline use.</p>
+  		</div><!-- END Column #4 -->
+  	</div><!-- END #style-area5 -->
+  	
+  	
+  	
+  	<div id="style-area6" class="content-area">
+  		<div>
+  	    	<h2>I'm the First Column in a 2 Column, 2/3 Column Layout. Floated Left Of Course</h2>
+  	    	<p>Move your videos easily between your computer and your smartphone or tablet. They are always correctly formatted for the device. You can even download videos to the device for offline use.</p>
+  		</div><!-- END Column #2 -->
+  		<div>
+  	    	<h2>I'm Little</h2>
+  	    	<p>Move your videos easily between your computer and your smartphone or tablet. They are always correctly formatted for the device. You can even download videos to the device for offline use.</p>
+  		</div><!-- END Column #3 -->
+  	</div><!-- END #style-area6 -->
+  	
+  	
+  	
+  	<div class="warning">
+  		<img src="img/warning.gif" alt="Warning!" />
+  		<div>
+  			<h1>This is a warning.</h1>
+  			<h3 class="meta">*But there&rsquo;s hope!</h3>
+  			<p>This would appear at the top of a page, and is assumed to be the user's priority (whether they know it or not).</p>
+  			<div class="btn-wrap">
+  				<a href="" class="button">Available Alternative</a>
+  				<p class="meta">Works for YOU!</p>
+  			</div>
+  		</div>  		
+  	</div> 
+  	
+  	<!--
+  			
+  			<!--///// THIS CODE DEMONSTRATES USING CONDITIONAL IMAGES /////
+<span class="phone-ui" data-picture data-alt="RealPlayer Cloud on Your Mobile Device">
+				<span data-src="img/_small/mobile-img_small.jpg" data-media="(min-width: 480px)"></span>
+				<span data-src="img/_medium/mobile-img_med.jpg" data-media="(min-width: 520px)"></span>
+				<noscript>
+					<img src="img/_small/mobile-img_small.jpg" alt="RealPlayer Cloud on Your Mobile Device">
+				</noscript>
+			</span>
+-->
+			
+  </section><!-- END section main -->
+  
+  <section class="secondary clearfix">
+  	<ul class="mods">
+  		<li id="rp-plus" class="clearfix">
+	  		<h2>Module Title #1</h2>
+	  		<p>Pads, iPhones, Roku’s, Android phones/tablets typically only have the ability to play limited video formats. For example, if you move a mkv file to an iPad and expect it to just play, well, it won’t. Additionally, very high bitrate files (HD resolution) won’t play smoothly on these devices unless they are right-sized for the screen and for the network bandwidth. SurePlay takes care of these technical irregularities by creating and storing right-sized copies of your videos so that they are always available for instant playback on all your devices at any given time. <a href="#">Inline Link</a>.</p>
+  		</li>
+  		<li id="web-vids" class="clearfix">
+  			<h2>Module Title #2</h2>
+  			<p>Additionally, very high bitrate files (HD resolution) won’t play smoothly on these devices unless they are right-sized for the screen and for the network bandwidth. SurePlay takes care of these technical irregularities by creating and storing right-sized copies of your videos so that they are always available for instant playback on all your devices at any given time.</p>
+	  	</li>
+  		<li id="about" class="clearfix">
+	  		<h2>Module Title #3</h2>
+  			<p>SurePlay is a brand new revolutionary technology from RealNetworks that enables seamless auto-formatting of videos to fit the device type, size of screen, available bandwidth and storage space available on device. It is the foundational technology that enables the seamlessness of RealPlayer Cloud.</p>
+  		</li>
+  	</ul>
+ </section><!-- END section.secondary -->
+ 
+  <footer id="footer" class="clearfix">
+  	<ul class="social clearfix">
+  		<li class="facebook">
+	  		<a href="#">
+		  		<span aria-hidden="true" class="icon-fbook"></span>
+		  		<span class="visuallyhidden">Facebook</span>
+		  	</a>
+  		</li>
+  	  	<li class="twitter">
+	  	  	<a href="#">
+		  		<span aria-hidden="true" class="icon-twitter"></span>
+		  		<span class="visuallyhidden">Twitter</span>
+		  	</a>
+  	  	</li>
+  		<li class="googleplus">
+	  		<a href="#">
+		  		<span aria-hidden="true" class="icon-gplus"></span>
+		  		<span class="visuallyhidden">Google+</span>
+		  	</a>
+  		</li>
+  	</ul>
+  	  <ul class="products clearfix">
+  	  	<li><a href="cloud-pricing.html">RealPlayer Plus</a></li>
+  	  	<li><a href="#">Mobile Apps</a></li>
+  	  </ul>
+  	  <ul class="community clearfix">
+  	  	<li><a href="#">Blog</a></li>
+  	  	<li><a href="#">News</a></li>
+  	  </ul>
+  	  <ul class="contact clearfix">
+  	  	<li><a href="#">Partner With Us</a></li>
+  	  	<li><a href="#">Contact Us</a></li>
+  	  </ul>
+  	  <ul class="help clearfix">
+  	  	<li><a href="#">Support</a></li>
+  	  	<li><a href="#">Uninstall RealPlayer</a></li>
+  	  </ul>
+  	  <ul class="legal clearfix">
+  	  	<li><a href="#">Terms of Use</a></li>
+  	  	<li><a href="#">Privacy</a></li>
+  	  	<li><a href="#">Licensing Agreement</a></li>
+  	  </ul>
+  	  
+	  <small id="copyright" class="clearfix">&copy;2013 RealNetworks, Inc. RealPlayer and the RealPlayer logo are registered trademarks of RealNetworks, Inc. All other trademarks are the property of their respective owners. </small>
+  </footer>
+<!-- END .all-content -->
+  
+<!-- load libraries -->
+<script>
+head.js(
+"http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js",
+"js/libs/jquery.jcarousellite.js", "js/script.js"
+);
+</script>
+  
+</body>
+</html>

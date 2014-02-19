@@ -1,0 +1,67 @@
+/* ==|== Secondary (Workhorse) Mod Styles =====================================================
+   Author: pmarich@realnetworks.com
+   Use: To style secondary modules above the footer
+   ========================================================================== */
+
+.secondary .mods {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0;
+	display: block;
+	.clear;
+	
+	h2 {
+		margin: 0;
+		font-size: 2.2em;
+		line-height: 1.2em;
+		color: #00a1ff;
+		display: inline-block;
+	}
+	sup {
+		font-size: 0.4em;
+	}
+	> li {
+		width: 100%;
+		margin: 0 0 18px;
+		padding: 20px 30px 20px;
+		background-color: #fff;
+		border: 1px #ccc solid;
+		color: @text-color;
+		position: relative;
+		box-shadow: 0 2px 3px 1px #ccc;
+		box-shadow: 0 2px 3px 1px rgba(0,0,0,0.15);
+		
+		p {margin: 10px 0 20px;}
+		.button {
+			margin: 0 auto 10px;
+		}
+		@media screen and (max-width: 310px) {
+			padding: 10px 14px;
+		}
+		@media screen and (max-width: 410px) {
+			padding: 16px;
+		}
+		@media screen and (min-width: 840px) {
+			width: 31.5%;
+			min-height: 270px;
+			margin: 10px 0 20px 2.7%;
+			padding: 20px 30px 30px;
+			background-color: #fff;
+			background-color: rgba(255,255,255,0.6);
+			background-image: none;
+			.fl-left;
+			box-shadow: none;
+		}
+	}
+	> li:first-child {
+		margin-left: 0;
+	}
+}
+section.secondary {
+	width: 100%;
+	margin: 0;
+	padding: 40px 2%;
+	border-top: 4px #e1e1e1 solid;
+	background: #e1e1e1 url('../img/bg-secondary.gif') repeat 0 0;
+	.fl-left;
+}

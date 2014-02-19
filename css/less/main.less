@@ -1,0 +1,101 @@
+/* ==|== primary styles =====================================================
+   Author: pmarich@realnetworks.com
+   ========================================================================== */
+
+/* // HEADER STYLES // */
+
+@import 'header-sub.less';
+
+/* // END HEADER // */
+
+
+
+/* // - - MAIN STYLES FOR INDIVIDUAL PAGE - - '' */
+
+/* Change "style-area" id title with meaningful name (ie. hero, content, about, etc_ */
+
+#style-area1 {
+	.one-col;
+	.text-center;
+	.border-bottom;
+	
+	h1 {
+		margin: 0 auto 0.3em;
+	}
+	p {
+		margin: 0 auto 2.3em;
+	}
+}
+#style-area2 {
+	.one-col;
+	.border-bottom;
+	
+	p {
+		margin: 0 0 2.3em;
+	}
+	@media screen and (min-width: 1020px) {
+		div:first-child {
+			padding-top: 6em;
+		}
+	}
+}
+#style-area3 {
+	.two-col;
+	.border-bottom;
+	
+	.button:nth-child(2) {
+		clear: both;
+	}
+	.icon-examples {
+		font-family: @text-font;
+		font-size: 1.6em;
+		color: #333;
+		
+		li {
+			margin-bottom: 1.3em;
+			
+			span {
+				font-size: 1.4em;
+				margin-right: 12px;
+			}
+		}
+	}
+}
+#style-area4 {
+	.three-col;
+	.border-bottom;
+}
+#style-area5 {
+	.four-col;
+	.border-bottom;
+}
+#style-area6 {
+	.two-third-col-left;
+}
+
+
+
+/* // WORKHORSE MODS STYLES // */
+/* DELETE IF NOT RELEVENT TO PAGE */
+
+@import 'workhorse-mods.less';
+
+
+
+
+/* // FOOTER STYLES // */
+
+@import 'footer-main.less';
+
+
+/* // Use this code for a sticky footer on pages with little content // */
+
+/*
+@media screen and (min-height: 750px) {
+	footer {
+	    width: 100%;
+	    position: absolute;
+	    bottom: 0;
+	}
+}
+*/
