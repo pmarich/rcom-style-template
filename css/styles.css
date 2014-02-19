@@ -194,7 +194,7 @@ TYPOGRAPHY
 .col {
   width: 94%;
   margin: 0 3%;
-  padding: 30px 2% 60px;
+  padding: 3em 2% 6em;
   zoom: 1;
   *zoom: 1;
   display: block;
@@ -216,7 +216,7 @@ TYPOGRAPHY
 .content-area > div {
   width: 94%;
   margin: 0 3%;
-  padding: 30px 2% 60px;
+  padding: 3em 2% 6em;
   zoom: 1;
   *zoom: 1;
   display: block;
@@ -235,13 +235,17 @@ TYPOGRAPHY
     margin: 0 auto;
   }
 }
+.full {
+  width: 100%;
+  max-width: none;
+}
 .content-margin-btm {
   margin-bottom: 3em;
 }
 .one-col {
   width: 94%;
   margin: 0 3%;
-  padding: 30px 2% 60px;
+  padding: 3em 2% 6em;
   zoom: 1;
   *zoom: 1;
   display: block;
@@ -264,7 +268,7 @@ TYPOGRAPHY
 .two-col {
   width: 94%;
   margin: 0 3%;
-  padding: 30px 2% 60px;
+  padding: 3em 2% 6em;
   zoom: 1;
   *zoom: 1;
   display: block;
@@ -298,7 +302,7 @@ TYPOGRAPHY
 .three-col {
   width: 94%;
   margin: 0 3%;
-  padding: 30px 2% 60px;
+  padding: 3em 2% 6em;
   zoom: 1;
   *zoom: 1;
   display: block;
@@ -332,7 +336,7 @@ TYPOGRAPHY
 .four-col {
   width: 94%;
   margin: 0 3%;
-  padding: 30px 2% 60px;
+  padding: 3em 2% 6em;
   zoom: 1;
   *zoom: 1;
   display: block;
@@ -366,7 +370,7 @@ TYPOGRAPHY
 .two-third-col-left {
   width: 94%;
   margin: 0 3%;
-  padding: 30px 2% 60px;
+  padding: 3em 2% 6em;
   zoom: 1;
   *zoom: 1;
   display: block;
@@ -403,7 +407,7 @@ TYPOGRAPHY
 .two-third-col-right {
   width: 94%;
   margin: 0 3%;
-  padding: 30px 2% 60px;
+  padding: 3em 2% 6em;
   zoom: 1;
   *zoom: 1;
   display: block;
@@ -449,6 +453,21 @@ TYPOGRAPHY
 }
 .border-right {
   border-top: 1px #e1e1e1 solid;
+}
+.content {
+  padding: 2em;
+  background: #888;
+  background: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+}
+.content h1,
+.content h2,
+.content h3,
+.content p {
+  color: #fff;
+}
+.inner-shadow {
+  box-shadow: inset 0 0 3em 1em rgba(0, 0, 0, 0.05);
 }
 /*  /// Animated Stuff ///  */
 /* text alignment */
@@ -533,7 +552,8 @@ a {
 p a {
   font-family: Helvetica, arial, sans-serif;
 }
-.no-touch a {
+/* .no-touch */
+a {
   -o-transition: all 0.25s ease;
   -ms-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
@@ -923,28 +943,30 @@ td {
     -webkit-transition: all 0.25s ease;
     transition: all 0.25s ease;
   }
-  .no-touch .button:visited {
+  /* .no-touch { */
+  .button:visited {
     color: #fff;
   }
-  .no-touch .button:hover {
+  .button:hover {
     color: #d1edfe;
     background-color: #3bb6fe;
     box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.2);
   }
-  .no-touch .cta:hover {
+  .cta:hover {
     color: #feeac4;
     background-color: #fec350;
   }
-  .no-touch .facebook-btn:hover {
+  .facebook-btn:hover {
     color: #738bbd;
     background-color: #536ea5;
   }
-  .no-touch .facebook-btn:hover img {
+  .facebook-btn:hover img {
     opacity: 0.4;
   }
-  .no-touch .button:active {
+  .button:active {
     background-color: #eee;
   }
+  /* } */
 }
 /* =============================================================================
    Page Elemnets & Special Content Areas
@@ -953,7 +975,7 @@ td {
 .warning {
   width: 94%;
   margin: 0 3%;
-  padding: 30px 2% 60px;
+  padding: 3em 2% 6em;
   zoom: 1;
   *zoom: 1;
   display: block;
@@ -1025,17 +1047,18 @@ td {
     margin-left: 10em;
   }
 }
-.no-touch .warning .button {
+/* .no-touch */
+.warning .button {
   color: #ffb320;
 }
-.no-touch .warning .button:visited {
+.warning .button:visited {
   color: #ffb320;
 }
-.no-touch .warning .button:hover {
+.warning .button:hover {
   color: #825601;
   background-color: #e9e9e9;
 }
-.no-touch .warning .button:active {
+.warning .button:active {
   color: #e1e1e1;
   background-color: #fff;
 }
@@ -1140,7 +1163,7 @@ td {
 #style-area1 {
   width: 94%;
   margin: 0 3%;
-  padding: 30px 2% 60px;
+  padding: 3em 2% 6em;
   zoom: 1;
   *zoom: 1;
   display: block;
@@ -1169,46 +1192,29 @@ td {
   margin: 0 auto 2.3em;
 }
 #style-area2 {
-  width: 94%;
-  margin: 0 3%;
-  padding: 30px 2% 60px;
-  zoom: 1;
-  *zoom: 1;
-  display: block;
-  margin-bottom: 3em;
-  border-bottom: 1px #e1e1e1 solid;
-}
-#style-area2:before,
-#style-area2:after {
-  content: "";
-  display: table;
-}
-#style-area2:after {
-  clear: both;
-}
-@media screen and (min-width: 1099px) {
-  #style-area2 {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  width: 100%;
+  max-width: none;
+  box-shadow: inset 0 0 3em 1em rgba(0, 0, 0, 0.05);
+  background: #00a1ff url('../img/bg-grid.png') repeat 0 0 fixed;
 }
 #style-area2 p {
   margin: 0 0 2.3em;
 }
 @media screen and (min-width: 1020px) {
-  #style-area2 div:first-child {
-    padding-top: 6em;
+  #style-area2 > div:first-child {
+    padding: 10em 2% 12em;
   }
 }
 #style-area3 {
   width: 94%;
   margin: 0 3%;
-  padding: 30px 2% 60px;
+  padding: 3em 2% 6em;
   zoom: 1;
   *zoom: 1;
   display: block;
   margin-bottom: 3em;
   padding: 0;
+  padding-top: 3em;
   border-bottom: 1px #e1e1e1 solid;
 }
 #style-area3:before,
@@ -1253,12 +1259,13 @@ td {
 #style-area4 {
   width: 94%;
   margin: 0 3%;
-  padding: 30px 2% 60px;
+  padding: 3em 2% 6em;
   zoom: 1;
   *zoom: 1;
   display: block;
   margin-bottom: 3em;
   padding: 0;
+  padding-top: 2em;
   border-bottom: 1px #e1e1e1 solid;
 }
 #style-area4:before,
@@ -1288,12 +1295,13 @@ td {
 #style-area5 {
   width: 94%;
   margin: 0 3%;
-  padding: 30px 2% 60px;
+  padding: 3em 2% 6em;
   zoom: 1;
   *zoom: 1;
   display: block;
   margin-bottom: 3em;
   padding: 0;
+  padding-top: 2em;
   border-bottom: 1px #e1e1e1 solid;
 }
 #style-area5:before,
@@ -1323,12 +1331,13 @@ td {
 #style-area6 {
   width: 94%;
   margin: 0 3%;
-  padding: 30px 2% 60px;
+  padding: 3em 2% 6em;
   zoom: 1;
   *zoom: 1;
   display: block;
   margin-bottom: 3em;
   padding: 0;
+  padding-top: 2em;
 }
 #style-area6:before,
 #style-area6:after {

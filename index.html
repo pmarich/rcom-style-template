@@ -21,8 +21,8 @@
  <meta name="apple-itunes-app" content="app-id=666575946, app-argument=http://real.com">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
   
-  <script src="js/libs/modernizr.custom.min.js"></script>
-  <script src="js/libs/head.min.js"></script>
+  <!-- <script src="js/libs/modernizr.custom.min.js"></script> -->
+  <!-- <script src="js/libs/head.min.js"></script> -->
   <script src="js/matchmedia.js"></script>
   <script src="js/picturefill.js"></script>
   <link rel="apple-touch-icon" href="rpc-ios-icon.png">
@@ -52,7 +52,7 @@
   			<li><a href="#">Sign Up</a></li>
   		</ul>
 </header>
-<!-- END Header #2 -->
+<!-- END Header #1 -->
 
 <section role="main" class="clearfix">
 
@@ -66,9 +66,11 @@
 	
 	<div id="style-area2" class="content-area">
 		<div>
-			<h1>I Am the H1 in a One Column Layout Aligned to the Left</h1>
-			<p>Notice how everything is left aligned? This works great for simple utility pages like &lsquo;Thank You&rsquo; and &lsquo;Unsubscribe&rsquo;.</p>
-	    	<div class="btn-wrap"><a href="#" class="button cta">Get Basic CTA Now</a></div>
+			<div class="content">
+				<h1>I Am the H1 in a One Column Layout Aligned to the Left</h1>
+				<p>Notice how everything is left aligned? This works great for simple utility pages like &lsquo;Thank You&rsquo; and &lsquo;Unsubscribe&rsquo;.</p>
+	    		<!-- <div class="btn-wrap"><a href="#" class="button cta">Get Basic CTA Now</a></div> -->
+			</div><!-- END .content -->
 		</div>
 	</div><!-- END #style-area2 -->
 	
@@ -255,12 +257,14 @@
 <!-- END .all-content -->
   
 <!-- load libraries -->
+<!--
 <script>
 head.js(
 "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js",
 "js/libs/jquery.jcarousellite.js", "js/script.js"
 );
 </script>
+-->
   
 </body>
 </html>

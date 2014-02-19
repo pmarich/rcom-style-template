@@ -27,20 +27,22 @@
 	}
 }
 #style-area2 {
-	.one-col;
-	.border-bottom;
+	.full;
+	.inner-shadow;
+	background: @real-blue url('../img/bg-grid.png') repeat 0 0 fixed;
 	
 	p {
 		margin: 0 0 2.3em;
 	}
 	@media screen and (min-width: 1020px) {
-		div:first-child {
-			padding-top: 6em;
+		> div:first-child {
+			padding: 10em 2% 12em;
 		}
 	}
 }
 #style-area3 {
 	.two-col;
+	padding-top: 3em;
 	.border-bottom;
 	
 	.button:nth-child(2) {
@@ -63,14 +65,17 @@
 }
 #style-area4 {
 	.three-col;
+	padding-top: 2em;
 	.border-bottom;
 }
 #style-area5 {
 	.four-col;
+	padding-top: 2em;
 	.border-bottom;
 }
 #style-area6 {
 	.two-third-col-left;
+	padding-top: 2em;
 }
 
 
